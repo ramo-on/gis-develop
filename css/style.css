@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+#sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Certifique-se de que o menu lateral fique acima do mapa */
+}
+
+.profile-photo img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.bio {
+    margin-top: 15px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+
+#map {
+    height: 100vh;
+    width: calc(100% - 290px);
+    margin-left: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0; /* Certifica-se de que o mapa esteja atrás dos outros elementos */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="number"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.controls {
+    background-color: rgba(255, 255, 255, 0.356); /* Fundo semi-transparente para os botões */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Margem opcional para separar dos links sociais */
+}
+
+.loading {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 2000;
+}
+

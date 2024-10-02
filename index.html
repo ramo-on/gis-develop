@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gis Project</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+    <div class="title">
+        Algoritmo de otimização de caminho
+    </div>
+
+    <!-- Sidebar com mídias sociais e resumo -->
+    <div id="sidebar">
+        <div class="profile-photo">
+            <img src="/1689019323447.jpeg" alt="Foto de Perfil" class="profile-img">
+        </div>
+        <div class="bio">
+            <h2>Ramon Soares</h2>
+            <p>Desenvolvedor apaixonado por GIS, programação e novas tecnologias. Sempre buscando a melhor solução para problemas complexos.</p>
+        </div>
+        <div id="loading" class="loading">Carregando...</div>
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+            <li><a href="https://www.github.com">GitHub</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+        </ul>
+        <!-- Botões para gerar pontos e enviar ao Python -->
+        <div class="controls">
+            <label for="point-qty">Quantidade de Pontos:</label>
+            <input type="number" id="point-qty" value="5" min="1">
+            <button id="generate-points">Inserir Pontos</button>
+            <button id="send-python">Enviar para Python</button>
+            <label for="reverse-walk">Caminho Reverso:</label>
+            <input type="checkbox" id="reverse-walk">
+        </div>
+    </div>
+
+
+    <!-- Mapa -->
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
